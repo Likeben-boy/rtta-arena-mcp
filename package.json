@@ -1,0 +1,50 @@
+{
+  "name": "@rtta/mcp-adapter",
+  "version": "1.0.0",
+  "description": "MCP adapter for Reverse Turing Test Arena AI agents",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "rtta-mcp-server": "dist/server.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/server.js",
+      "types": "./dist/server.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "ethers": "^6.13.0",
+    "zod": "^3.22.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agent",
+    "blockchain",
+    "ethereum",
+    "game",
+    "rtta",
+    "reverse-turing-test"
+  ],
+  "author": "RTTA Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Likeben-boy/rtta-arena-mcp.git"
+  },
+  "homepage": "https://github.com/Likeben-boy/rtta-arena-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/Likeben-boy/rtta-arena-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
